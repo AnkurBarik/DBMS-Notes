@@ -22,3 +22,6 @@ select * from faculty where semester>2 and semester<9;
 
 To rename any column name:
 alter table faculty rename column Mobile to Contact_No;
+
+To add a primary key:
+alter table faculty add primary key(Name);
