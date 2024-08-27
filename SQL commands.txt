@@ -14,6 +14,9 @@ VALUES ('BWU/BEE/19/01', 'Kamal Nandy', '2', '3', '123123344', 'F');
 To display table:
 SELECT * FROM faculty;
 
+To display specific column:
+select Name from faculty;
+
 To delete a row:
 DELETE FROM faculty WHERE Roll='BWU/BEE/19/01';
 
@@ -25,3 +28,6 @@ alter table faculty rename column Mobile to Contact_No;
 
 To add a primary key:
 alter table faculty add primary key(Name);
+
+To update a data in the table:
+update faculty set Contact_No = 9789786540 where name='Puja Patra';
