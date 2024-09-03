@@ -46,3 +46,6 @@ select * from faculty where name like 'B%';
 
 To filter data by its length:
 select * from faculty where name like 'A%' and length(name)>=5;
+
+To add foreign key:
+alter table dept add foreign key(dept_id) references dept(dept_id);
