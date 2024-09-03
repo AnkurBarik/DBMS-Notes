@@ -40,3 +40,9 @@ dept_id number(2),
 semester number(1),
 mobile number(12),
 gender varchar(1));
+
+To Filter data by its inner letter:
+select * from faculty where name like 'B%';
+
+To filter data by its length:
+select * from faculty where name like 'A%' and length(name)>=5;
