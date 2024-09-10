@@ -49,3 +49,7 @@ select * from faculty where name like 'A%' and length(name)>=5;
 
 To add foreign key:
 alter table dept add foreign key(dept_id) references dept(dept_id);
+
+To find result using multiple table:
+SELECT name,dept_loc FROM faculty, dept WHERE faculty.dept_id = dept.dept_id AND dept.dept_loc='Kolkata';
+
